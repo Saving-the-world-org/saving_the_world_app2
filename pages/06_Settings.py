@@ -3,6 +3,9 @@ import streamlit as st
 from src.utils.dataio import get_data
 import streamlit.components.v1 as components
 
+# Begin Streamlit calls
+st.set_page_config(layout="wide")
+
 def main(df):
     #Header information 
     st.title("System Settings", anchor=None)

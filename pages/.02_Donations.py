@@ -16,6 +16,9 @@ ipfs_uri = os.getenv("IPFS_URI")
 # Define web3 and load contract
 w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
 
+# Begin Streamlit calls
+st.set_page_config(layout="wide")
+
 @st.cache(allow_output_mutation=True)
 def load_contract():
     with open(contract_abi) as f:

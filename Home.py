@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import logging
 import streamlit as st
@@ -9,8 +10,9 @@ load_dotenv()
 
 contract_address = os.getenv("SMART_CONTRACT_ADDRESS")
 contract_abi = os.getenv("ABI_PATH")
-# st.write(f"Contract Address: {contract_address}")
-# st.write(f"Contract ABI: {contract_abi}")
+
+# Begin Streamlit
+st.set_page_config(layout="wide")
 
 def main(df):
     # Page Header information

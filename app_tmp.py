@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import json
 from web3 import Web3
@@ -5,7 +6,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import streamlit as st
 
-from pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
+from src.utils.pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
 
 load_dotenv()
 

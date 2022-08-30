@@ -1,9 +1,8 @@
-# Python imports
-from pathlib import Path
-import argparse
+# -*- coding: utf-8 -*-
+import os
 import json
 import logging
-import os
+from pathlib import Path
 from typing import Dict, Any
 from web3 import Web3
 from dotenv import load_dotenv
