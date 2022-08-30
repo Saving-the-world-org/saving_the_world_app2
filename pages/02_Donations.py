@@ -55,7 +55,7 @@ def main(df):
     initial_appraisal_value = st.text_input("Value")
     file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
 
-    if st.button("Mint"):
+    if st.button("Donate"):
         resource_ipfs_hash = pin_image(resource_name, file)
         resource_uri = f"ipfs://{resource_ipfs_hash}"
         # address,string,address,string,string,string,uint256

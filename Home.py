@@ -17,8 +17,7 @@ def main(df):
     st.title("Humanitarian Aid Supply Chain Tracker Tool", anchor=None)
     st.subheader("This app enabled you to safetly track donating and receiving aid products on a blockchain. ")
     st.caption("Project 3 by Phoebe Gunter, Harry Oestreicher, Abhishek Banerjee, Gabriel Paganin, Gerald Cortright, Javier", unsafe_allow_html=False)
-    st.write(df)
-    # st.table(df)
+    st.markdown("TODO:  Add visualizations etc...")
 
     # with st.sidebar.form(key ='Form1'):
         # user_word = st.text_input("Enter a keyword", "habs")    
