@@ -1,5 +1,6 @@
 # Python imports
 from pathlib import Path
+import argparse
 import json
 import logging
 import os
@@ -99,7 +100,6 @@ def set_up_blockchain(contract: str, abi_path: str):
         with open(Path('./contracts/compiled/save_the_world_abi.json')) as f:
             ABI = json.load(f)
 
-
         CODE_NFT = w3.eth.contract(address=contract, abi=ABI)  # The contract
         CHAIN_ID = 5777
 
@@ -177,6 +177,7 @@ def web3_mint(userAddress: str, tokenURI: str, eth_json: Dict[str, Any]) -> str:
 token_metadata_url = f"{ipfs_uri}/{contract_address}"
 
 def minter(contract_address, contract_abi, recipient_address, token_metadata_url):
+# def minter():
     logging.info("Starting mint")
 
     # parser = argparse.ArgumentParser(description="Mint NFTs")
@@ -202,11 +203,20 @@ def minter(contract_address, contract_abi, recipient_address, token_metadata_url
     # )
 
     # args = parser.parse_args()
-    # Setup blockchain basics
+    # # Setup blockchain basics
+
+
+    # eth_json: Dict[str, Any]
+
     eth_json = set_up_blockchain(contract_address, contract_abi)
+    logging.info(eth_json)
+    # logging.info(recipient_address)
+    # logging.info()
+    
+
     # Mint token
-    txn_hash, tokenid = web3_mint(recipient_address, token_metadata_url, eth_json)
-    logging.info(f"Scan url for token {tokenid}: {eth_json['scan_url']}{txn_hash} ")
+    # txn_hash, tokenid = web3_mint(recipient_address, token_metadata_url, eth_json)
+    # logging.info(f"Scan url for token {tokenid}: {eth_json['scan_url']}{txn_hash} ")
 
 # def main():
 #     return
