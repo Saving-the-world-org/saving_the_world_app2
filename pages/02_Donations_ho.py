@@ -101,6 +101,19 @@ def main(df):
         st.write(dict(receipt))
         st.write("You can view the pinned metadata file with the following IPFS Gateway Link")
         st.markdown(f"[Artwork IPFS Gateway Link](https://gateway.pinata.cloud/ipfs/{resource_ipfs_hash})")
+        """
+        TODO: Add logging and local data storgae here. Then move code into an external function.
+        """
+        query = """INSERT INTO TABLE VALUES(
+            recipient_account,
+            resource_uri,
+            donor_account,
+            category,
+            lat_long,
+            resource_name,
+            int(initial_appraisal_value);
+            """
+        save_data(query)
 
 def load_data():
     query_str = "SELECT * FROM DONATIONS;"

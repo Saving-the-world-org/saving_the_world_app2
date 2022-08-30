@@ -20,3 +20,20 @@ def init_data():
 def get_data(query):
     df = pd.read_sql_query(query, con=engine)
     return df
+
+def create_transaction(query):
+
+    return
+
+def read_transaction(query):
+
+    return
+
+def update_transaction(query):
+
+    return
+
+def delete_transaction(query):
+
+    return
+    
