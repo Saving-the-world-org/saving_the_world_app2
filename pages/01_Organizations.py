@@ -61,7 +61,7 @@ mahscript = """
 def main(df):
     #Header information 
     st.title("Explore Organizations")
-    st.subheader("You can donate to...")
+    st.subheader("Here is a list of organisations you can donate to: ")
 
     for i in org_df.index.drop_duplicates():
         col1, col2 = st.columns(2)

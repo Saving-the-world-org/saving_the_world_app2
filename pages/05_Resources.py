@@ -18,8 +18,8 @@ st.set_page_config(layout="wide")
 def main(df):
     #Header information 
     st.title("Resources", anchor=None)
-    st.subheader("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-    st.caption("work in progress ", unsafe_allow_html=False)
+    #st.subheader("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    st.caption("You can update the database input data here:", unsafe_allow_html=False)
     st.write(df)
 
 def load_data():

@@ -11,7 +11,7 @@ def main(df):
     #Header information 
     st.title("System Settings", anchor=None)
     st.subheader("Configure database, users, etc.")
-    st.write("coming soon")
+    #st.write("coming soon")
 
     hvar = """
             <script>

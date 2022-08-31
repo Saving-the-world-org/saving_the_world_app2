@@ -8,9 +8,9 @@ st.set_page_config(layout="wide")
 
 def main(df):
     #Header information 
-    st.title("CITIES", anchor=None)
-    st.subheader("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-    st.caption("Things we say about this", unsafe_allow_html=False)
+    st.title("Recipients", anchor=None)
+    st.subheader("TODO: This needs to be updated with a view of everything that has been donated to a specific organisation and allow them to claim / transfer the tokents to themselves.")
+    #st.caption("Things we say about this", unsafe_allow_html=False)
     st.write(df)
 
 
